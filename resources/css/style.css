@@ -1,0 +1,142 @@
+html {
+  font-size: 18px;
+  line-height: 1.4;
+  }
+
+
+ body {
+   width: 100%;
+   height: auto;
+   margin: 0px;
+ }
+
+/*Header style*/
+
+.header {
+  display: flex;
+  width: 1400px;
+  height: auto;
+
+  justify-content: center;
+  /*align-content: flex-start;*/
+  flex-direction: column;
+
+}
+
+.background-img {
+  display: flex;
+  width: 100%;
+  height: 31rem;
+  margin: auto 0;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  background-image: url("../glasses-bg.png");
+  background-size: cover;
+  /*margin-bottom: 3rem;*/
+}
+
+
+.site {
+  width: 960px;
+  height: auto;
+  background-color: cadetblue;
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 1rem;
+  margin-right: 2rem;
+
+}
+
+.logoh5 {
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  hight: auto;
+  width: 480px;
+  margin: 0;
+}
+.logo {
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  hight: 1.5rem;
+  width: 4.5rem;
+  margin: 0rem 1rem 0rem 2rem;
+}
+
+h5 {
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0rem;
+  font-family: Helvetica;
+  font-size: 1rem;
+  color: white;
+}
+
+/* Header navigation for spam items */
+
+.nav {
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+  height: auto;
+  width: 480px;
+
+}
+
+.nav nav {
+  width: 480px;
+  display: inline-flex;
+  justify-content: flex-end;
+}
+
+nav span {
+  display: inline-flex;
+  justify-content: flex-end;
+  width: auto;
+  text-align: center;
+  margin-right: 2rem;
+}
+
+
+nav a {
+  color: white;
+  font-family: Helvetica;
+  font-size: 1rem;
+  margin: 1rem 0;
+  font-weight: bold;
+}
+
+.banner-site {
+  display: inline-flex;
+  width: 960px + 2rem;
+  height: auto;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 10rem;
+}
+
+/*.banner {
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+  height: auto;
+  width: auto;
+  margin: 0rem;
+}*/
+
+ .banner-site h1 {
+  font-family: Helvetica;
+  font-size: 2rem;
+  padding: 1.5rem 5rem;
+  font-weight: bold;
+  line-height: 1.4;
+  background-color: white;
+}
