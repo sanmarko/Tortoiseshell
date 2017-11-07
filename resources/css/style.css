@@ -1,3 +1,5 @@
+
+/*Base font definition*/
 html {
   font-size: 18px;
   }
@@ -7,7 +9,7 @@ html {
    line-height: 1.4;
  }
 
-/*Header style*/
+/*Header container style*/
 .header {
   display: flex;
   width: 100%;
@@ -18,6 +20,7 @@ html {
   background-size: cover;
 }
 
+/*Heder 960px site container*/
 .site {
   display: flex;
   width: 960px;
@@ -30,23 +33,24 @@ html {
   margin-right: 2rem;
 }
 
+/* Logo and text h5 container */
 .logoh5 {
   display: inline-flex;
-  /*justify-content: flex-start;*/
   align-items: center;
   hight: 3rem;
   width: auto;
 }
 
+/*White header logo*/
 .logo {
   display: inline-flex;
-  /*justify-content: flex-start;*/
   align-items: center;
   hight: 1.5rem;
   width: 4rem;
   margin: 0rem 1rem 0rem 2rem;
 }
 
+/*header text*/
 .torto {
   margin: 1rem 0;
   font-family: Helvetica;
@@ -54,11 +58,12 @@ html {
   color: white;
 }
 
+/*Menu text in header hidden for large screens*/
 #menu-new {
   display: none;
 }
 
-/* Header navigation for spam items */
+/* Header navigation for span items */
 .nav {
   display: inline-flex;
   height: auto;
@@ -66,12 +71,9 @@ html {
 }
 
 nav span {
-/*#menu-all span {*/
   margin-right: 2rem;
 }
 
-
-/*#menu-all a {*/
 nav a {
   color: white;
   font-family: Helvetica;
@@ -80,6 +82,7 @@ nav a {
   font-weight: bold;
 }
 
+/*Banner container*/
 .banner-site {
   display: flex;
   width: 960px;
@@ -120,7 +123,7 @@ nav a {
     align-items: center;
   }
 
-
+/*Icon and icon text containers*/
   .box1 {
     display: flex;
     width: 5rem;
@@ -158,6 +161,7 @@ nav a {
     display: flex;
   }
 
+/*Icon text*/
   .box1 h6,
   .box2 h6,
   .box3 h6 {
@@ -169,7 +173,7 @@ nav a {
     line-height: 1.4;
   }
 
-/* Philisophy and appointments container*/
+/* Philosophy and appointments container*/
   .phil-appoint {
     height: auto;
     width: 960px;
@@ -179,17 +183,18 @@ nav a {
     margin-bottom: 5rem;
   }
 
-    .phil {
-      display: inline-flex;
-      width: 35%;
-      align-items: flex-start;
-      justify-content: center;
-      flex-direction: column;
-      margin-left: 5%;
+/*Individual philosophy and appointments container*/
+  .phil {
+    display: inline-flex;
+    width: 35%;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 5%;
+    }
 
-      }
-
-      .phil h6 {
+  /*Individual Header*/
+  .phil h6 {
         display: flex;
         width: 10rem;
         color: white;
@@ -205,7 +210,8 @@ nav a {
         line-height: 1.4;
       }
 
-      .phil p {
+  /* Text*/
+  .phil p {
         color: black;
         font-family: Helvetica;
         text-align: left;
@@ -213,8 +219,8 @@ nav a {
         line-height: 1.4;
       }
 
-      /* Footer */
-      .base {
+  /* Footer */
+  .base {
         height: 9.5rem;
         width: 100%;
         display: flex;
@@ -223,7 +229,7 @@ nav a {
       }
 
       /*Footer dist container defines the footer dimensions and orientation*/
-      .dist {
+  .dist {
         display: flex;
         width: 960px;
         height: 9.5rem;
@@ -233,8 +239,8 @@ nav a {
         background-color: azure;
       }
 
-      /*Black logo in footer*/
-      .logob {
+  /*Black logo in footer*/
+  .logob {
         display: inline-flex;
         align-items: center;
         hight: 1.5rem;
@@ -242,7 +248,7 @@ nav a {
         margin: 4rem 0 4rem 4rem;
       }
 
-      .dist h3 {
+  .dist h3 {
         display: inline-flex;
         color: black;
         font-style: Helvetica;
@@ -252,7 +258,10 @@ nav a {
         margin-left: 1rem;
       }
 
-      @media only screen and (max-width: 1024px) and (min-width: 470px) {
+  /* 1024px screen adjustments */
+  @media only screen and (max-width: 1024px) and (min-width: 470px) {
+
+        /*Header adjustment*/
         .header {
           width: 100%;
           height: 22rem;
@@ -288,7 +297,6 @@ nav a {
           }
 
         /*Footer logo adjustment*/
-
         .base {
           width: 100%;
         }
@@ -303,8 +311,10 @@ nav a {
         }
       }
 
-      @media only screen and (max-width: 470px) {
+  /* 470px screen adjustments */
+  @media only screen and (max-width: 470px) {
 
+        /*Header adjustment*/
         .header {
           width: 100%;
           height: 17rem;
@@ -320,11 +330,10 @@ nav a {
           display: none;
         }
 
-        /* Header menu navigation adjustment*/
+        /* Header Menu navigation adjustment*/
         #menu-new {
           display: inline-flex;
         }
-
 
         nav a {
           color: white;
@@ -334,6 +343,7 @@ nav a {
           font-weight: bold;
         }
 
+        /*Apart of Menu text the rest of menu navigation text hidden */
         #menu-all {
           display: none;
         }
@@ -353,7 +363,7 @@ nav a {
           text-align: center;
         }
 
-        /* Service icon style */
+        /* Services icon container adjustment */
         .services {
             width: 100%;
             display: flex;
@@ -363,14 +373,12 @@ nav a {
             margin-top: 2.23rem; /*Required 3.77rem - 1.54rem (box1)*/
           }
 
+          /*Individual icon container adjustments */
           .box1 {
             display: flex;
             width: 5rem;
             height: auto;
-            /*justify-content: center;*/
             margin: 1.54rem;
-            /*flex-direction: column;
-            align-items: center;*/
           }
 
           .box2,
@@ -378,10 +386,7 @@ nav a {
             display: flex;
             width: auto;
             height: 4rem;
-            /*justify-content: center;*/
             margin: 1.54rem;
-            /*flex-direction: column;
-            align-items: center;*/
           }
 
           .box1 h6,
@@ -391,8 +396,8 @@ nav a {
             margin-top: 0.5rem;
           }
 
-          /* Philisophy and appointments container*/
-            .phil-appoint {
+          /* Philosophy and appointments container*/
+          .phil-appoint {
               height: auto;
               width: 100%;
               display: flex;
@@ -402,53 +407,40 @@ nav a {
               align-items: center;
               margin-bottom: 0rem; /* margin-bottom 4rem set in .phil p and
                                       1rem will be added in footer .dist*/
-            }
+              }
 
-              .phil {
+            .phil {
                 display: flex;
                 width: 100%;
-                /*align-items: center;
-                justify-content: center;
-                flex-direction: column;*/
                 margin-left: 0%;
                 }
 
-                .phil h6 {
-                  display: flex;
-                  width: 100%;
-                  justify-content: center;
-                  padding-left: 0rem;
-                  margin-bottom: 1rem;
+            .phil h6 {
+                display: flex;
+                width: 100%;
+                justify-content: center;
+                padding-left: 0rem;
+                margin-bottom: 1rem;
                 }
 
-                .phil p {
-                  margin-bottom: 4rem;
-                  font-size: 0.77rem;
+            .phil p {
+                margin-bottom: 4rem;
+                font-size: 0.77rem;
                 }
 
-                /* Footer */
-                /*.base {
-                  height: 9.5rem;
-                  width: 100%;
-                  display: flex;
-                  align-items: center;
-                  flex-direction: column;
-                }*/
 
-                /*Footer dist container defines the footer dimensions and orientation*/
-                .dist {
+            /*Footer dist container defines the footer dimensions and orientation*/
+            .dist {
                   display: flex;
                   width: 100%;
                   height: 9.5rem;
                   margin-top: 1rem;
-                  /*align-items: center;
-                  flex-direction: row;*/
                   justify-content: center;
                   background-color: azure;*/
                 }
 
-                /*Black logo in footer*/
-                .logob {
+            /*Black logo in footer*/
+            .logob {
                   display: flex;
                   align-items: center;
                   justify-content: center;
@@ -457,14 +449,8 @@ nav a {
                   margin: 4rem 0;
                 }
 
-                .dist h3 {
+            /*Text in footer hidden*/
+            .dist h3 {
                   display: none;
-                  /*color: black;
-                  font-style: Helvetica;
-                  line-height: 1.4;
-                  font-size: 1rem;
-                  text-align: left;
-                  margin-left: 1rem;*/
                 }
-
       }
